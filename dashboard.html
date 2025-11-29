@@ -1,0 +1,154 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Smart Text Summarizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-theme">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="brand-title"><span class="brand-italic">Smart</span> Text Summarizer</h1>
+        <p class="brand-tag">Quick summaries • Highlighted keywords • Exam-ready notes</p>
+      </div>
+
+      <nav class="top-nav">
+        <a href="#about" class="nav-link">
+          <span class="nav-icon">📘</span>
+          <span>About</span>
+        </a>
+        <a href="#faqs" class="nav-link">
+          <span class="nav-icon">❓</span>
+          <span>FAQs</span>
+        </a>
+        <a href="#summary-section" class="nav-link">
+          <span class="nav-icon">📝</span>
+          <span>Summary</span>
+        </a>
+        <a href="tips.html" class="nav-link">
+          <span class="nav-icon">✨</span>
+          <span>Tips & Tricks</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="card section-block">
+      <h2 class="section-title">About This Website</h2>
+      <p class="section-lead">
+        <strong><em>Smart Text Summarizer</em></strong> is your personal revision partner.  
+        It converts long paragraphs, textbook pages, and notes into short, clear bullet points with highlighted keywords and an estimated reading time.
+      </p>
+      <p class="section-text">
+        Whether you are from <strong>CBSE</strong>, <strong>ICSE</strong> or any other board,
+        this tool is designed to save your time and reduce your stress.
+        Instead of reading the same chapter again and again, you can quickly go through the summary,
+        revise the important points, and focus on solving questions.
+      </p>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Instant Summaries</h3>
+          <p>Paste your text or upload an image and get a clean, concise summary within seconds.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Focused Keywords</h3>
+          <p>Important terms are highlighted so your eyes go exactly where marks are hidden.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⏱️</div>
+          <h3>Reading Time</h3>
+          <p>Know how long it will take to read the original text, so you can plan your study sessions better.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3>Study Smart</h3>
+          <p>Combine summaries with psychology-based study tips for maximum exam performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUMMARY INPUT SECTION -->
+    <section id="summary-section" class="card section-block">
+      <h2 class="section-title">Upload or Paste Your Text</h2>
+      <p class="section-text">
+        You can either upload a clear image of your notes/ textbook page or directly paste your long paragraph in the box below.
+        After clicking <strong>Summarize Text</strong>, a new page will open with your summary.
+      </p>
+
+      <div class="summary-input-grid">
+        <div class="input-block">
+          <label class="label">Upload image of your text (optional)</label>
+          <input type="file" id="textImage" accept="image/*" class="file-input" />
+          <p class="hint-text">Use a well-lit, clear image for best results.</p>
+        </div>
+
+        <div class="input-block">
+          <label class="label">Or paste your long text here</label>
+          <textarea id="textInput" class="text-area" placeholder="Paste your chapter, notes or paragraph here..."></textarea>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="generateSummary" class="btn primary">Summarize Text →</button>
+        <button id="clearInput" class="btn ghost">Clear</button>
+      </div>
+
+      <p class="note">
+        <span class="accent">Tip:</span> For quick revision, paste only the important part instead of whole textbook.
+      </p>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faqs" class="card section-block">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Who can use this website?</summary>
+          <p>Any student from CBSE, ICSE, State Board or other boards who wants to save time and revise faster.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Does it work with handwritten notes?</summary>
+          <p>Handwritten notes may work if the handwriting is very clear, but typed text gives much better results.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Will this replace my textbook?</summary>
+          <p>No. This website is for revision and quick understanding. You should always read your textbook properly at least once.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I use it during exams?</summary>
+          <p>You can use it while preparing, but follow your school and exam rules. This tool is made for learning, not cheating.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is my data saved permanently?</summary>
+          <p>Your basic details are stored in your browser to personalise your experience. You can clear browser data to remove it.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What is the best way to use this tool?</summary>
+          <p>First, read the chapter once. Then use this tool to convert it into summaries and revise using those summaries + tips & tricks.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Built for students who want to study smart, not just hard.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

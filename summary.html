@@ -1,0 +1,40 @@
+<!-- summary.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summary - Smart Text Summarizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-theme">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="brand-title"><span class="brand-italic">Smart</span> Text Summarizer</h1>
+      </div>
+      <nav class="top-nav">
+        <a href="dashboard.html" class="nav-link">
+          <span class="nav-icon">←</span>
+          <span>Back to Dashboard</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="card section-block">
+      <h2 class="section-title">Original Text</h2>
+      <p id="originalTextDisplay" class="section-text"></p>
+    </section>
+
+    <section class="card section-block">
+      <h2 class="section-title">Summary</h2>
+      <ul id="summaryList" class="summary-list"></ul>
+      <p id="readingTime" class="note"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
